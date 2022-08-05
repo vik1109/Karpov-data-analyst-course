@@ -5,24 +5,32 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import io
 import pandas as pd
-from CH import Getch
+import pandahouse
 from datetime import datetime, timedelta
 
 #импорт библиотек airflow
 from airflow.decorators import dag, task
 from airflow.operators.python import get_current_context
 
-my_token = '5575671590:AAHSLefnc-Ivqk9rit5qLUuLAoRoDyg5eeI' # тут нужно заменить на токен вашего бота
+my_token = 'тут нужно заменить на токен вашего бота' # тут нужно заменить на токен вашего бота
 bot = telegram.Bot(token=my_token) # получаем доступ
 
+#sql - запрос
 sql_feed = """SELECT toDate(time) AS event_date,
             countIf(action = 'like') AS likes,
             countIf(action = 'view') AS view,
             likes/view AS ctr,
             uniqExact(user_id) AS dau
             FROM simulator_20220620.feed_actions
-            GROUP BY toDate(time) HAVING toDate(time)>=today()-7"""
+            GROUP BY toDate(time) HAVING toDate(time)>=today()-7 AND toDate(time)<today()"""
 
+#строка для соединения с CH
+connection = {
+    'host': 'https://clickhouse.lab.karpov.courses',
+    'password': 'password',
+    'user': 'student',
+    'database': 'simulator'
+}
 # Дефолтные параметры, которые прокидываются в таски
 default_args = {
     'owner': 'v.morozov',
@@ -40,7 +48,7 @@ def vmorozov_telegram_dag():
         
     @task
     def extract():
-        data = Getch(sql_feed).df
+        data = pandahouse.read_clickhouse(sql_feed, connection=connection)
         return data
     
     @task
@@ -58,7 +66,7 @@ def vmorozov_telegram_dag():
         Просмотры - {view}
         CTR - {round(ctr,4)}
         DAU - {dau}"""
-        
+        chat_id = 306618482
         bot.sendMessage(chat_id=chat_id, text=msg)
         
         #DAU

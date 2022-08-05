@@ -12,26 +12,17 @@ from airflow.operators.python import get_current_context
 #строка для соединения с CH db = simulator
 connection_simulator = {
     'host': 'https://clickhouse.lab.karpov.courses',
-    'password': 'dpo_python_2020',
+    'password': 'password',
     'user': 'student',
     'database': 'simulator'
 }
 
 connection_test = {
     'host': 'https://clickhouse.lab.karpov.courses',
-    'password': '656e2b0c9c',
+    'password': 'password',
     'user': 'student-rw',
     'database': 'test'
 }
-
-#соединение с базой данных
-#df = pandahouse.read_clickhouse(q, connection=connection)
-
-# Функция для CH
-#def ch_get_df(query='Select 1', host='https://clickhouse.lab.karpov.courses', user='student', password='dpo_python_2020'):
-#    r = requests.post(host, data=query.encode("utf-8"), auth=(user, password), verify=False)
-#    result = pd.read_csv(StringIO(r.text), sep='\t')
-#    return result
 
 feed_query = """SELECT user_id,
                        countIf(action = 'view') AS views,

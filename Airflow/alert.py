@@ -13,7 +13,7 @@ from tabulate import tabulate
 from airflow.decorators import dag, task
 from airflow.operators.python import get_current_context
 
-my_token = '5575671590:AAHSLefnc-Ivqk9rit5qLUuLAoRoDyg5eeI' # тут нужно заменить на токен вашего бота
+my_token = 'тут нужно заменить на токен вашего бота' # тут нужно заменить на токен вашего бота
 bot = telegram.Bot(token=my_token) # получаем доступ
 chat_id = 306618482 
 
@@ -46,7 +46,7 @@ def send_graf(plot_object, chat_id = 306618482):
 #строка для соединения с CH
 connection = {
     'host': 'https://clickhouse.lab.karpov.courses',
-    'password': 'dpo_python_2020',
+    'password': 'password',
     'user': 'student',
     'database': 'simulator'
 }
