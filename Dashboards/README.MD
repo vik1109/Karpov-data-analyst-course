@@ -1,27 +1,27 @@
 ###### Лента новостей. Оперативные данные.
 
-![3-1-лента-новостей-оперативные-данные-2022-08-03T12-13-28.614Z](https://github.com/vik1109/Karpov-data-analyst-course/blob/main/Dashboards/3-1-%D0%BB%D0%B5%D0%BD%D1%82%D0%B0-%D0%BD%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D0%B5%D0%B9-%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%B5-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5-2022-08-03T12-13-28.614Z.jpg)
+![News feed -real-time data](https://github.com/vik1109/Karpov-data-analyst-course/blob/main/Dashboards/3-1-News-feed-real-time-data-2022-08-03T12-13-28.614Z.jpg)
 
 ###### Лента новостей. Основные данные.
 
-![3-1-лента-новостей-основное-2022-08-03T12-11-53.866Z](C:\Users\72090\OneDrive\Обучение\Karpov.Courses\Дашборд\3-1-лента-новостей-основное-2022-08-03T12-11-53.866Z.jpg)
+![News-feed-base-line](https://github.com/vik1109/Karpov-data-analyst-course/blob/main/Dashboards/3-1-news-feed-base-line-2022-08-03T12-11-53.866Z.jpg)
 
 ###### Оперативные данные лента и мессенджер.
 
-![3-2-оперативные-данные-лента-и-мессенджер-2022-08-03T12-14-08.708Z](C:\Users\72090\OneDrive\Обучение\Karpov.Courses\Дашборд\3-2-оперативные-данные-лента-и-мессенджер-2022-08-03T12-14-08.708Z.jpg)
+![Feed and messenger](https://github.com/vik1109/Karpov-data-analyst-course/blob/main/Dashboards/3-2-feed_and-msg-2022-08-03T12-14-08.708Z.jpg)
 
 ###### Retention Rate по источникам траффика
 
-![4-1-rr-by-sources-2022-08-03T12-15-22.124Z](C:\Users\72090\OneDrive\Обучение\Karpov.Courses\Дашборд\4-1-rr-by-sources-2022-08-03T12-15-22.124Z.jpg)
+![Retention-Rate-by-sources](https://github.com/vik1109/Karpov-data-analyst-course/blob/main/Dashboards/4-1-rr-by-sources-2022-08-03T12-15-22.124Z.jpg)
 
 ###### Итоги маркетинговой компании
 
-![4-2-итоги-маркетинговой-компании-2022-08-03T12-15-59.557Z](C:\Users\72090\OneDrive\Обучение\Karpov.Courses\Дашборд\4-2-итоги-маркетинговой-компании-2022-08-03T12-15-59.557Z.jpg)
+![Marketing compaign results](https://github.com/vik1109/Karpov-data-analyst-course/blob/main/Dashboards/4-2-marketing-campaign-results-2022-08-03T12-15-59.557Z.jpg)
 
 ###### Сбой в приложении
 
-![4-3-сбой-в-приложении-2022-08-03T12-16-39.173Z](C:\Users\72090\OneDrive\Обучение\Karpov.Courses\Дашборд\4-3-сбой-в-приложении-2022-08-03T12-16-39.173Z.jpg)
+![Application crash](https://github.com/vik1109/Karpov-data-analyst-course/blob/main/Dashboards/4-3-application-crash-2022-08-03T12-16-39.173Z.jpg)
 
 ###### Активная аудитория по неделям (старые, новые, ушедшие).
 
-###### ![4-4-активная-аудитория-старые-новые-ушедшие-пользователи-2022-08-03T12-16-55.960Z](C:\Users\72090\OneDrive\Обучение\Karpov.Courses\Дашборд\4-4-активная-аудитория-старые-новые-ушедшие-пользователи-2022-08-03T12-16-55.960Z.jpg)
+###### ![active-audience](https://github.com/vik1109/Karpov-data-analyst-course/blob/main/Dashboards/4-4-active-audience-old-new-gone-users-2022-08-03T12-16-55.960Z.jpg)
